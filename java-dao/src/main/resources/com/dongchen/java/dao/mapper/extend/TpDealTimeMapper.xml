@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dongchen.java.dao.mapper.extend.TpDealTimeMapper">
+
+    <select id="queryDealTime" resultType="java.util.Date">
+        SELECT DEALDATE FROM TP_DEALTIME
+    </select>
+
+    <update id="addDealTime" >
+        UPDATE TP_DEALTIME SET DEALDATE = DEALDATE + 1
+    </update>
+
+    <update id="updateDealTime" >
+        UPDATE TP_DEALTIME T SET T.DEALDATE = #{dealTime,jdbcType=DATE}
+    </update>
+</mapper>

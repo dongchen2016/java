@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: BootApplication  # Service registers under this name
+  datasource:
+      url: jdbc:mysql://localhost:3306/test?useUnicode:true&charcterEncoding=UTF-8
+      username: root
+      password: root
+      driverClass: com.mysql.jdbc.Driver
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+    timeout: 0
+
+server:
+  address: 0.0.0.0
+  port: 5002
+
+
+
+
