@@ -1,7 +1,24 @@
 spring:
   application:
     name: HttpApplication  # Service registers under this name
+  profiles:
+    active: test
 
+---
+#开发环境配置
+spring:
+  profiles: dev
 server:
-  address: 0.0.0.0
   port: 5200
+---
+#测试环境配置
+spring:
+  profiles: test
+server:
+  port: 5201
+---
+#生产环境配置
+spring:
+  profiles: pro
+server:
+  port: 5202
