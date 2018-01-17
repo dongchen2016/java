@@ -1,11 +1,9 @@
-package com.dongchen.java.eurekaserver.controller;
+package com.dongchen.java.eurekaclient.controller;
 
 import com.netflix.discovery.DiscoveryClient;
-import com.netflix.discovery.converters.Auto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,8 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
+
     @GetMapping("/hello")
     public String index(){
-        return "hello World";
+        return "eureka client";
     }
 }

@@ -18,6 +18,7 @@
         <module>java-server</module>
         <module>java-learn</module>
         <module>java-eureka-server</module>
+        <module>java-eureka-client</module>
     </modules>
 
 
