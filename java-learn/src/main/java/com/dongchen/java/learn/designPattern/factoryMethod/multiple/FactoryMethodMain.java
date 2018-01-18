@@ -1,7 +1,7 @@
 package com.dongchen.java.learn.designPattern.factoryMethod.multiple;
 
 
-import com.mdd.java.learn.Sender;
+import com.dongchen.java.learn.designPattern.Sender;
 
 /**
  * @author: mdd

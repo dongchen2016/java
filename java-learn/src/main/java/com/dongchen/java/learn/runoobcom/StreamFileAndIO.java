@@ -1,6 +1,6 @@
 package com.dongchen.java.learn.runoobcom;
 
-import com.mdd.java.learn.runoobcom.io.Output;
+import com.dongchen.java.learn.runoobcom.io.Output;
 
 import java.io.FileInputStream;
 import java.io.InputStream;

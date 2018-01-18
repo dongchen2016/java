@@ -1,13 +1,5 @@
 spring:
   application:
     name: hello-service
-server:
-  port: 8761
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    registerWithEureka: true
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+  profiles:
+    active: peer1

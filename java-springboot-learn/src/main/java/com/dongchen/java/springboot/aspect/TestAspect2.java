@@ -18,7 +18,7 @@ import java.util.Arrays;
 @Configuration
 public class TestAspect2 {
 
-    @Around("execution(* com.mdd.java.service.*.*(..))")
+    @Around("execution(* com.dongchen.java.service.*.*(..))")
     public Object testAspect(final ProceedingJoinPoint joinPoint) throws Throwable{
         try{
             Object[] args = joinPoint.getArgs();

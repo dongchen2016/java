@@ -10,15 +10,15 @@ import java.util.List;
  * @date:2017/12/16
  */
 public class Test {
-    public static void test(){
-        List<String> list = new ArrayList<>();
-        Collections.sort(list, new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                int i = o1.length()-o2.length();
-                return i;
-            }
-        });
-    }
+//    public static void test(){
+//        List<String> list = new ArrayList<>();
+//        Collections.sort(list, new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2) {
+//                int i = o1.length()-o2.length();
+//                return i;
+//            }
+//        });
+//    }
 
 }

@@ -1,8 +1,9 @@
 package com.dongchen.java.learn.designPattern.factoryMethod.normal;
 
-import com.mdd.java.learn.MailSender;
-import com.mdd.java.learn.Sender;
-import com.mdd.java.learn.SmsSender;
+
+import com.dongchen.java.learn.designPattern.MailSender;
+import com.dongchen.java.learn.designPattern.Sender;
+import com.dongchen.java.learn.designPattern.SmsSender;
 
 /**
  * @author: mdd

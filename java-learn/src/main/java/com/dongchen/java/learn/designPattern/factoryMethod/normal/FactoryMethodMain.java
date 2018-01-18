@@ -1,6 +1,7 @@
 package com.dongchen.java.learn.designPattern.factoryMethod.normal;
 
-import com.mdd.java.learn.Sender;
+
+import com.dongchen.java.learn.designPattern.Sender;
 
 /**
  * @author: mdd
