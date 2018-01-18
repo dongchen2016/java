@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eureka-client1
+    name: hello-service
 server:
   port: 8700
 eureka:
