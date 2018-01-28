@@ -20,6 +20,7 @@
         <module>java-eureka-server</module>
         <module>java-eureka-client</module>
         <module>java-proto</module>
+        <module>hello-service</module>
     </modules>
 
 
