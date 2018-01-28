@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: hello-service
-  profiles:
-    active: peer1
