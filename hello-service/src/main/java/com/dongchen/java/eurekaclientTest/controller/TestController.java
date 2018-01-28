@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 
 /**
@@ -26,7 +27,7 @@ public class TestController {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
     @GetMapping("/hello")
-    public String index(){
+    public String index() throws Exception{
         List<ServiceInstance> serviceInstanceList = discoveryClient.getInstances("hello-service");
         logger.info("实例个数：" + serviceInstanceList.size());
         for (ServiceInstance instance : serviceInstanceList){
@@ -34,6 +35,9 @@ public class TestController {
                     "，uri:"+ instance.getUri()+ ", service_id：" + instance.getServiceId());
         }
 
+        ServiceInstance serviceInstance = discoveryClient.getLocalServiceInstance();
+        int sleepTime = new Random().nextInt(3000);
+        Thread.sleep(sleepTime);
         return "hello world";
     }
 

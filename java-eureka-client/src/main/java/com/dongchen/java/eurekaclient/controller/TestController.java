@@ -80,7 +80,6 @@ public class TestController {
                     "http://HELLO-SERVICE/post/user-info",info,UserInfo.class);
             userInfo = userInfoResponseEntity.getBody();
         }
-
         return userInfo;
     }
 }
