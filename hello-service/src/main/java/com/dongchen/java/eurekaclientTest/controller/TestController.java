@@ -19,6 +19,11 @@ public class TestController {
     @GetMapping("/hello")
     public String index(){
 
+        return "hello world";
+    }
+
+    @GetMapping("/hello2")
+    public String service(){
         return "eureka client";
     }
 
