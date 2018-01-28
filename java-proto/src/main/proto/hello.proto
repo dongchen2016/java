@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "com.dongchen.java.proto.hello";
+option java_outer_classname = "HelloProto";
+
+// 调用请求
+message HelloRequest {
+    string name = 1;
+	string content = 2;
+}
+
+//  调用返回
+message HelloResponse {
+    String code = 123;
+    String msg = 123;
+}

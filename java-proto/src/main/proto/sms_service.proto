@@ -1,0 +1,17 @@
+// java.com.onecard.proto.card service
+syntax = "proto3";
+import "sms.proto";
+package card;
+
+
+option java_package = "com.onecard.ecity.proto.sms";
+option java_outer_classname = "SmsServiceGrpc";
+
+
+// Interface exported by the server.
+// 短信服务相关
+service SmsService {
+	// 查询验证码
+    rpc SendCaptcha(SendCaptchaRequest) returns(SendCaptchaResponse) {}
+}
+

@@ -1,0 +1,45 @@
+// java.com.onecard.proto.card service
+// created by dzq on 2017/12/26 in NJ
+syntax = "proto3";
+import "wjnsh.proto";
+package card;
+
+
+option java_package = "com.onecard.ecity.proto.wjnsh";
+option java_outer_classname = "WjnshServiceGrpc";
+
+
+// Interface exported by the server.
+// 开户相关
+service WjnshService {
+
+    // 开户
+    rpc OpenAccount(OpenAccountRequest) returns(OpenAccountResponse) {}
+
+    // 充值
+    rpc charge(ChargeRequest) returns(ChargeResponse) {}
+
+    // 提现
+    rpc withdraw(WithdrawRequest) returns(WithdrawResponse){}
+
+    // 消费
+    rpc consume(ConsumeRequest) returns(ConsumeResponse){}
+
+    // 退款
+    rpc refund(RefundRequest) returns(RefundResponse){}
+
+    // 余额查询
+    rpc inquire(InquireRequest) returns(InquiresResponse){}
+
+    // 销户
+    rpc cancel(CancelRequest) returns(CancelResponse){}
+
+    // 交易明细查询
+    rpc details(DetailsRequest) returns(DetailsResponse){}
+
+    // 交易状态查询
+    rpc status(StatusRequest) returns(StatusResponse){}
+
+    // 换卡
+    rpc change(ChangeRequest) returns(ChangeResponse){}
+}

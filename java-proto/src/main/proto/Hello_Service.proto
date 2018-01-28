@@ -1,0 +1,14 @@
+syntax = "proto3";
+import "hello.proto";
+
+
+option java_package = "com.dongchen.java.proto.hello";
+option java_outer_classname = "HelloServiceGrpc";
+
+
+// Interface exported by the server.
+// 测试helloWord
+service HelloService {
+	// 查询验证码
+    rpc hello(HelloRequest) returns(HelloResponse) {}
+}

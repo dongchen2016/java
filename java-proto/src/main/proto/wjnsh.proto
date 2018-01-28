@@ -1,0 +1,209 @@
+// java.com.onecard.proto.card message
+// created by dzq on 2017/12/26 in NJ
+syntax = "proto3";
+package card;
+
+
+option java_package = "com.onecard.ecity.proto.wjnsh";
+option java_outer_classname = "WjnshProto";
+
+//********************************
+// 开户请求
+message OpenAccountRequest {
+    string AccName = 1;
+    string CiNo = 2;
+    string CiType = 3;
+    string BankCardNo = 4;
+    string MobileNo = 5;
+}
+
+//  开户应答
+message OpenAccountResponse {
+    string SysRtnCd = 1;
+    string SysRtnDesc = 2;
+}
+//********************************
+//充值请求
+message ChargeRequest {
+    string BankCardNo = 1;
+    string AcNo = 2;
+    string AccName = 3;
+    string CiNo = 4;
+    string MobileNo = 5;
+    string Amount = 6;
+}
+//充值应答
+message ChargeResponse {
+    string SysRtnCd = 1;
+    string SysRtnDesc = 2;
+}
+//********************************
+//提现请求
+message WithdrawRequest {
+    string BankCardNo = 1;
+    string AcNo = 2;
+    string AccName = 3;
+    string CiNo = 4;
+    string MobileNo = 5;
+    string Amount = 6;
+}
+//提现应答
+message WithdrawResponse {
+    string SysRtnCd = 1;
+    string SysRtnDesc = 2;
+}
+//********************************
+//消费请求
+message ConsumeRequest {
+    string BankCardNo = 1;
+    string AcNo = 2;
+    string AccName = 3;
+    string CiNo = 4;
+    string MobileNo = 5;
+    string Amount = 6;
+    string MerchantNo = 7;
+    string TerminalNo = 8;
+
+}
+//消费应答
+message ConsumeResponse {
+    string SysRtnCd = 1;
+    string SysRtnDesc = 2;
+}
+//********************************
+//退款请求
+message RefundRequest {
+    string BankCardNo = 1;
+    string AcNo = 2;
+    string AccName = 3;
+    string CiNo = 4;
+    string MobileNo = 5;
+    string Amount = 6;
+    string MerchantNo = 7;
+    string TerminalNo = 8;
+}
+//退款应答
+message RefundResponse {
+    string SysRtnCd = 1;
+    string SysRtnDesc = 2;
+}
+//********************************
+//查询余额请求
+message InquireRequest {
+    string BankCardNo = 1;
+    string AcNo = 2;
+    string AccName = 3;
+    string CiNo = 4;
+    string MobileNo = 5;
+}
+//查询余额应答
+message InquiresResponse {
+    string SysRtnCd = 1;
+    string SysRtnDesc = 2;
+}
+//********************************
+//销户请求
+message CancelRequest {
+    string BankCardNo = 1;
+    string AcNo = 2;
+    string AccName = 3;
+    string CiNo = 4;
+    string MobileNo = 5;
+}
+//销户应答
+message CancelResponse {
+    string SysRtnCd = 1;
+    string SysRtnDesc = 2;
+}
+//********************************
+//交易明细请求
+message DetailsRequest {
+    string BankCardNo = 1;
+    string AcNo = 2;
+    string QueryNum = 3;
+    string Offset = 4;
+    string BeginDate = 5;
+    string EndDate = 6;
+}
+//交易明细应答
+message DetailsResponse {
+    string SysRtnCd = 1;
+    string SysRtnDesc = 2;
+}
+//********************************
+//交易状态请求
+message StatusRequest {
+    string OrgSmkLsh = 1;
+    string OrgTranType = 2;
+}
+//交易状态应答
+message StatusResponse {
+    string SysRtnCd = 1;
+    string SysRtnDesc = 2;
+}
+//********************************
+//换卡请求
+message ChangeRequest {
+    string AccName = 1;
+    string CiNo = 2;
+    string CiType = 3;
+    string OldBankCardNo = 4;
+    string NewBankCardNo = 5;
+    string AcNo = 6;
+    string MobileNo = 7;
+}
+//换卡应答
+message ChangeResponse {
+    string SysRtnCd = 1;
+    string SysRtnDesc = 2;
+}
+//********************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+// java.com.onecard.proto.card message
+syntax = "proto3";
+package card;
+
+
+option java_package = "com.onecard.ecity.proto.sms";
+option java_outer_classname = "SmsProto";
+
+
+// 发送短信请求
+message SendCaptchaRequest {
+    string captcha = 1;
+	string mobile = 2;
+    string channel = 3;
+    string type = 4;
+}
+
+//  发送短信应答
+message SendCaptchaResponse {
+    int32 errcode = 1;
+    string errmsg = 2;
+    string biz_id = 3;
+}
+
+
