@@ -3,6 +3,7 @@ package com.dongchen.java.eurekaclient.controller;
 import com.dongchen.java.dao.entity.UserInfo;
 import com.netflix.discovery.DiscoveryClient;
 import com.netflix.discovery.converters.Auto;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +25,10 @@ import java.util.Map;
  * @date:2018/1/17
  * @描述:
  */
+@Slf4j
 @RestController
 public class TestController {
-    private final Logger logger = LoggerFactory.getLogger(getClass());
+//    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
     private RestTemplate restTemplate;
@@ -35,7 +37,12 @@ public class TestController {
 //    private DiscoveryClient discoveryClient;
     @GetMapping("/hello")
     public String index(){
-
+        //日志级别从低到高分为TRACE < DEBUG < INFO < WARN < ERROR < FATAL，如果设置为WARN，则低于WARN的信息都不会输出。
+        log.trace("日志输出 trace");
+        log.debug("日志输出 debug");
+        log.info("日志输出 info");
+        log.warn("日志输出 warn");
+        log.error("日志输出 error");
         return "eureka client";
     }
 

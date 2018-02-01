@@ -8,4 +8,6 @@
   java-util:工具类模块，包含各种工具类、异常类、静态常量
   java-webservice-server:webservice服务端，写webservice服务端代码，被客户端调用，目前尚未实现
 
+  logback日志学习地址：http://blog.csdn.net/inke88/article/details/75007649#%E9%BB%98%E8%AE%A4%E6%97%A5%E5%BF%97-logback
+
 
